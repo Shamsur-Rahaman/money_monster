@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>Money Master</title>
+</head>
+<body>
+    
+
+
+<nav class="flex flex-row items-center bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl">      
+       <img src="images/money_master_logo.png" class="h-8" alt="Flowbite Logo" />
+    </div>
+</nav>
+  
+<main>
+    <div class="grid grid-cols-2 gap-4 p-5">
+        <div>
+            <img class="object-cover object-fill" src="images/money_master_banner_side.png">
+        </div>
+        <div class="bg-gray-100 p-5">
+            <h1 class="text-center text-2xl py-1">Income</h1>
+            <div class="flex py-1">
+                <p class="flex-1 py-1">Income :</p> 
+                <input type="number" name="" id="income_input" class="flex-auto px-2 py-1 rounded-lg bg-gray-200">
+            </div>
+            <h1 class="text-center text-2xl">Expense</h1>
+            <div class="flex py-1">
+                <p class="flex-1 py-1">Food :</p> 
+                <input type="number" name="" id="food_input" class="flex-auto px-2 py-1 rounded-lg bg-gray-200">
+            </div>
+            <div class="flex py-1">
+                <p class="flex-1 py-1">Rent :</p> 
+                <input type="number" name="" id="rent_input" class="flex-auto px-2 py-1 rounded-lg bg-gray-200">
+            </div>
+            <div class="flex py-1">
+                <p class="flex-1 py-1">Clothes :</p> 
+                <input type="number" name="" id="clothes_input" class="flex-auto px-2 py-1 rounded-lg bg-gray-200">
+            </div>
+            <div class="flex flex-col my-5 space-y-4 items-center text-center">
+                <button class="btn btn-info text-lg text-white rounded-lg" id="btn-calculate">Calculate</button>
+                <h1>Total Expenses : <span id="total_expenses"></span></h1>
+                <h1>Balance : <span id="balance"></span></h1>
+            </div>
+            <div>
+                <p>Save : <input type="number" name="" id="save_input" class="py-2 bg-gray-200"> 
+                    <span>%</span> 
+                    <button class="btn btn-info text-white w-36" id="btn-save">Save</button></p>
+            </div>
+            <div class="flex flex-col my-5 space-y-4 items-center text-center">
+                <h1>Saving Amount : <span id="saving_amount"></span> </h1>
+                <h1>Remaining Balance : <span id="remaining_balance"></span></h1>
+            </div>
+        </div>
+    </div>
+</main>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/calculation.js"></script>
+</body>
+</html>
